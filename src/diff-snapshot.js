@@ -190,7 +190,7 @@ function diffImageToSnapshot(options) {
     result = { added: true };
   } else {
     const diffOutputPath = path.join(diffDir, `${snapshotIdentifier}-diff.png`);
-    const currSnapshotOutputPath = path.join(currSnapshotsDir, `${snapshotIdentifier}-current.png`);
+    const currSnapshotOutputPath = path.join(currSnapshotsDir, `${snapshotIdentifier}-snap.png`);
     rimraf.sync(diffOutputPath);
     rimraf.sync(currSnapshotOutputPath);
 
